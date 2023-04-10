@@ -1,0 +1,57 @@
+python overview:
+
+PEP - python enchancement Proposal - official design document provided to py community or decrbing python features and process. style guidelines for python code
+
+Python interpreted lanaguage: not compiled, but python virtual machine executes the code by converting it into bytecode
+
+dynamically typed: strong type check. static are checked before execution
+dynamic - checked during execution.
+
+why indented: just like java, C++ have {} to define the scope of the statements
+indentation is same for python. it is compulsary
+it improves readbility 
+
+keywords in python - reserve words that have specific meaning and purpose
+as of 3.10, 35 keywords in python
+if, True, break,  None etc
+
+built-in dataypes:
+Text type: str
+Numeric type: int, float, complex
+Sequence type: list, tuple, range
+Mapping type: dict
+set types: set, frozenset (immutable sets, just like what tuples are to list)
+Boolean: bool
+Binary types: bytes, bytearray, memoryview (https://youtu.be/u1OMKxfbXmk) used for byte level operations
+None type: None  (not iterable)
+
+types of functions in python:
+1. python Built-in functions
+2. Recusion functions
+3. lambda functions
+4. User-defined functions
+
+
+class:
+__init__ is the contructor of the class object
+self - is not a keyword, any variable can be wrtten. the variable(self) is used refer to the instance of that particular object
+
+pass statement: used as a placeholder, nothing happens when executed
+
+how to check if a given string has digit:
+1. extract the character at the index and check isdigit() functions
+2. use regex
+	import modeule re and defines methods that can be used
+
+What is difference between reverse and reversed in Python?
+reverse() actually reverses the elements in the container. reversed() doesn't actually reverse anything, it merely returns an object that can be used to iterate over the container's elements in reverse order.
+
+unpacking can be used with any iterable in Python, not just with tuples.
+
+function parameters vs arguments:
+in the function definition, they are called parameters
+in the actual function call, the values passed are called arguments
+
+positional arguments should be used before using keyword arguments
+
+never include input from user and output to print inside functions, as the function maynot be reusable
