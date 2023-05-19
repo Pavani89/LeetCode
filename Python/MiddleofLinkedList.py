@@ -4,7 +4,7 @@
 Return the running sum of nums.
 
 Time complexity: O(n)
-Space complexity: O(n)
+Space complexity: O(1)
 '''
 
 class ListNode:
